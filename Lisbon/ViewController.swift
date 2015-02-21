@@ -26,6 +26,18 @@ class ViewController: SLKTextViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+
+        ball.center = CGPointMake(view.bounds.size.width/2, 200)
+        ball.backgroundColor = UIColor.blueColor()
+        ball.layer.cornerRadius = ball.bounds.size.width/2
+        ball.layer.masksToBounds = true
+        view.addSubview(ball)
+    }
+
+    
+
 
 }
 
