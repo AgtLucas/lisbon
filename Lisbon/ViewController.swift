@@ -36,7 +36,13 @@ class ViewController: SLKTextViewController {
         view.addSubview(ball)
     }
 
-    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+
+        // POP
+        let anim = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
+
+    }
 
 
 }
