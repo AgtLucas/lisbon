@@ -8,7 +8,13 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+import pop
+import Alamofire
+import SlackTextViewController
+
+class ViewController: SLKTextViewController {
+
+    var ball = UIView(frame: CGRectMake(0, 0, 100, 100))
 
     override func viewDidLoad() {
         super.viewDidLoad()
