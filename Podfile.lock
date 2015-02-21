@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (1.1.4)
+  - pop (1.0.7)
+  - SlackTextViewController (1.4.1):
+    - SlackTextViewController/Additions (= 1.4.1)
+  - SlackTextViewController/Additions (1.4.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 1.1)
+  - pop
+  - SlackTextViewController
+
+SPEC CHECKSUMS:
+  Alamofire: 524225da382071ee3e6d0badd0ee4b4dc36740de
+  pop: 2f14a1ea61339767af9e66741b418c831b3844df
+  SlackTextViewController: 2dcf79adbfc49447e90256ce863c1de412199942
+
+COCOAPODS: 0.36.0.beta.2
