@@ -41,6 +41,15 @@ class ViewController: SLKTextViewController {
 
         // POP
         let anim = POPSpringAnimation(propertyNamed: kPOPLayerScaleXY)
+        anim.toValue = NSValue(CGPoint: CGPointMake(2.0, 2.0))
+        anim.springBounciness = 20
+        anim.springSpeed = 10
+        ball.layer.pop_addAnimation(anim, forKey: "grow-ball")
+
+        // Alamo
+        Alamofire.request(.GET, "http://httpbin.org/get").responseString { (_, _, string, _) in
+            self.textInputbar.textView.text = string
+        }
 
     }
 
